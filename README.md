@@ -49,7 +49,7 @@ After running, the project saves a graph of the state machine:
 Example Graph:
 Process file → Read JSON → Extract Parameters → Score (IP/Hash) → End
 
-🛡️ Error Handling
-  Invalid API Key (401): returns "Invalid API Key"
-  Rate Limiting (429): returns "Rate limit exceeded, try again later"
-  Wrong/Corrupt JSON: returns "File contents are not in JSON"
+🛡️ **Error Handling**
+- Invalid API Key (401): returns "Invalid API Key"
+- Rate Limiting (429): returns "Rate limit exceeded, try again later"
+- Wrong/Corrupt JSON: returns "File contents are not in JSON"
