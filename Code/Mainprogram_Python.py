@@ -4,7 +4,7 @@ import os
 import requests
 
 
-API_KEY='7c2da6fcb9e74ac070383740d4d3ddeb201dcd6bfa9ab7aefbd6ceaf44835f74'
+API_KEY='API KEY'
 
 
 def take_parameter_from_File(Content, Key_Value):
