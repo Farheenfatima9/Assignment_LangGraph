@@ -1,0 +1,511 @@
+{
+    "category_uid": 2,
+    "category_name": "Findings",
+    "class_uid": 2004,
+    "hash" : "3b3b3b9f7c71fcd7239abe90c97751c0",
+    "class_name": "Detection Finding",
+    "metadata": {
+        "product": {
+            "name": "vipre"
+        },
+        "version": "1.0.0"
+    },
+    "activity_id": 1,
+    "activity_name": "Create",
+    "type_uid": 200401,
+    "unmapped": {
+        "links": [
+            {
+                "rel": [
+                    "backtrack-details"
+                ]
+            }
+        ],
+        "incidentId": "INC-649",
+        "device": {
+            "agent_list": [
+                {
+                    "uid_alt": "4fc1efeb-d78e-4baa-b278-a2d15f7714a2",
+                    "policies": [
+                        {
+                            "uid": "d3113439-8284-4de4-8da9-f6a7ef0080ba",
+                            "name": "MSS - PT"
+                        }
+                    ]
+                }
+            ],
+            "softwareVersion": "13.2.8665",
+            "loggedInUser": "LAP-0290\\Ebryx"
+        },
+        "blocked": true,
+        "attackTypes": [
+            "Malware",
+            "Potentially unwanted application",
+            "Other"
+        ],
+        "alertCount": 101,
+        "notesCount": 0,
+        "triggerNode": {
+            "depthLevel": 0,
+            "eventTime": 1756723349279,
+            "phase": 1,
+            "reason": "FILE_READ",
+            "type": "FILE",
+            "score": 100,
+            "alertCount": 1,
+            "eventCount": 1,
+            "actionTaken": "UNDEFINED",
+            "data": {
+                "detectionName": "Application.ProcessHacker.1",
+                "detectionMark": "MALWARE",
+                "malwareFamily": "Agent",
+                "actionsTaken": "UNDEFINED",
+                "accessType": "FILE_READ",
+                "processAccessPrivileges": "elevated"
+            }
+        }
+    },
+    "evidences": [
+        {
+            "http_request": {
+                "http_method": "GET",
+                "uid": "68b181f1-b0da-4cfb-ac44-99caa0e19f4c",
+                "url": {
+                    "hostname": "mssp"
+                }
+            },
+            "uid": "frAQBc8Wsa1xVPfvJcrgRYwTiizs2trQF69AzBlax3CF3EDNhm3soLBPh71Yexui64e4a25fbc617c2fd92f91597191cee6d1eebc7dc93305d4eaoEiIgxIX4a2dRE",
+            "device": {
+                "hostname": "Syed Umer Qadri",
+                "type": "LAPTOP",
+                "type_id": 1,
+                "ip": "193.46.255.217",
+                "domain": "WORKGROUP",
+                "mac": "B4-BD-2B-F9-DB-54,6C-24-08-B4-CA-35,00-15-5D-9D-E2-20,0A-00-27-00-00-1B,0A-00-27-00-00-21,0A-00-27-00-00-14,0A-00-27-00-00-13,00-FF-BF-D7-DB-A4,,8C-F8-C5-C3-5C-67,8C-F8-C5-C3-5C-68,8E-F8-C5-C3-5C-67",
+                "os": {
+                    "name": "Windows 11",
+                    "type_id": 100
+                }
+            },
+            "verdict": "NONE",
+            "process": {
+                "uid": "113439570",
+                "name": "processhacker-2.39-setup.exe",
+                "pid": 0,
+                "path": "c:\\windows\\system32\\searchprotocolhost.exe",
+                "integrity": "system"
+            }
+        }
+    ],
+    "finding_info": {
+        "src_url": "https://mssp.avshield.eu/incidents/details/frAQBc8Wsa1xVPfvJcrgRYwTiizs2trQF69AzBlax3CF3EDNhm3soLBPh71Yexui64e4a25fbc617c2fd92f91597191cee6d1eebc7dc93305d4eaoEiIgxIX4a2dRE/1756723394110",
+        "uid": "frAQBc8Wsa1xVPfvJcrgRYwTiizs2trQF69AzBlax3CF3EDNhm3soLBPh71Yexui64e4a25fbc617c2fd92f91597191cee6d1eebc7dc93305d4eaoEiIgxIX4a2dRE",
+        "attacks": [
+            {
+                "tactic": {
+                    "name": "Defense Evasion"
+                },
+                "technique": {
+                    "uid": "T1553",
+                    "name": "Subvert Trust Controls"
+                },
+                "sub_technique": {
+                    "uid": "T1553.002",
+                    "name": "Code Signing"
+                }
+            },
+            {
+                "tactic": {
+                    "name": "Execution"
+                },
+                "technique": {
+                    "uid": "T1204",
+                    "name": "User Execution"
+                },
+                "sub_technique": {
+                    "uid": "T1204.002",
+                    "name": "Malicious File"
+                }
+            },
+            {
+                "tactic": {
+                    "name": "Initial Access"
+                },
+                "technique": {
+                    "uid": "T1195",
+                    "name": "Supply Chain Compromise"
+                },
+                "sub_technique": {
+                    "uid": "T1195.002",
+                    "name": "Compromise Software Supply Chain"
+                }
+            },
+            {
+                "tactic": {
+                    "name": "Initial Access"
+                },
+                "technique": {
+                    "uid": "T1566",
+                    "name": "Phishing"
+                },
+                "sub_technique": {
+                    "uid": "T1566.002",
+                    "name": "Spearphishing Link"
+                }
+            },
+            {
+                "tactic": {
+                    "name": "Command And Control"
+                },
+                "technique": {
+                    "uid": "T1105",
+                    "name": "Ingress Tool Transfer"
+                }
+            },
+            {
+                "tactic": {
+                    "name": "Execution"
+                },
+                "technique": {
+                    "uid": "T1059",
+                    "name": "Command and Scripting Interpreter"
+                }
+            },
+            {
+                "tactic": {
+                    "name": "Execution"
+                },
+                "technique": {
+                    "uid": "T1569",
+                    "name": "System Services"
+                },
+                "sub_technique": {
+                    "uid": "T1569.002",
+                    "name": "Service Execution"
+                }
+            },
+            {
+                "tactic": {
+                    "name": "Defense Evasion"
+                },
+                "technique": {
+                    "uid": "T1027",
+                    "name": "Obfuscated Files or Information"
+                },
+                "sub_technique": {
+                    "uid": "T1027.009",
+                    "name": "Embedded Payloads"
+                }
+            },
+            {
+                "tactic": {
+                    "name": "Defense Evasion"
+                },
+                "technique": {
+                    "uid": "T1027",
+                    "name": "Obfuscated Files or Information"
+                },
+                "sub_technique": {
+                    "uid": "T1027.004",
+                    "name": "Compile After Delivery"
+                }
+            },
+            {
+                "tactic": {
+                    "name": "Defense Evasion"
+                },
+                "technique": {
+                    "uid": "T1036",
+                    "name": "Masquerading"
+                },
+                "sub_technique": {
+                    "uid": "T1036.005",
+                    "name": "Match Legitimate Name or Location"
+                }
+            },
+            {
+                "tactic": {
+                    "name": "Defense Evasion"
+                },
+                "technique": {
+                    "uid": "T1036",
+                    "name": "Masquerading"
+                },
+                "sub_technique": {
+                    "uid": "T1036.004",
+                    "name": "Masquerade Task or Service"
+                }
+            },
+            {
+                "tactic": {
+                    "name": "Collection"
+                },
+                "technique": {
+                    "uid": "T1560",
+                    "name": "Archive Collected Data"
+                },
+                "sub_technique": {
+                    "uid": "T1560.002",
+                    "name": "Archive via Library"
+                }
+            },
+            {
+                "tactic": {
+                    "name": "Command And Control"
+                },
+                "technique": {
+                    "uid": "T1071",
+                    "name": "Application Layer Protocol"
+                },
+                "sub_technique": {
+                    "uid": "T1071.001",
+                    "name": "Web Protocols"
+                }
+            },
+            {
+                "tactic": {
+                    "name": "Command And Control"
+                },
+                "technique": {
+                    "uid": "T1095",
+                    "name": "Non-Application Layer Protocol"
+                }
+            },
+            {
+                "tactic": {
+                    "name": "Command And Control"
+                },
+                "technique": {
+                    "uid": "T1571",
+                    "name": "Non-Standard Port"
+                }
+            },
+            {
+                "tactic": {
+                    "name": "Execution"
+                },
+                "technique": {
+                    "uid": "T1106",
+                    "name": "Native API"
+                }
+            },
+            {
+                "tactic": {
+                    "name": "Exfiltration"
+                },
+                "technique": {
+                    "uid": "T1030",
+                    "name": "Data Transfer Size Limits"
+                }
+            },
+            {
+                "tactic": {
+                    "name": "Defense Evasion"
+                },
+                "technique": {
+                    "uid": "T1055",
+                    "name": "Process Injection"
+                },
+                "sub_technique": {
+                    "uid": "T1055.002",
+                    "name": "Portable Executable Injection"
+                }
+            },
+            {
+                "tactic": {
+                    "name": "Discovery"
+                },
+                "technique": {
+                    "uid": "T1083",
+                    "name": "File and Directory Discovery"
+                }
+            },
+            {
+                "tactic": {
+                    "name": "Execution"
+                },
+                "technique": {
+                    "uid": "T1203",
+                    "name": "Exploitation for Client Execution"
+                }
+            },
+            {
+                "tactic": {
+                    "name": "Defense Evasion"
+                },
+                "technique": {
+                    "uid": "T1497",
+                    "name": "Virtualization/Sandbox Evasion"
+                },
+                "sub_technique": {
+                    "uid": "T1497.001",
+                    "name": "System Checks"
+                }
+            },
+            {
+                "tactic": {
+                    "name": "Defense Evasion"
+                },
+                "technique": {
+                    "uid": "T1497",
+                    "name": "Virtualization/Sandbox Evasion"
+                },
+                "sub_technique": {
+                    "uid": "T1497.002",
+                    "name": "User Activity Based Checks"
+                }
+            },
+            {
+                "tactic": {
+                    "name": "Defense Evasion"
+                },
+                "technique": {
+                    "uid": "T1564",
+                    "name": "Hide Artifacts"
+                },
+                "sub_technique": {
+                    "uid": "T1564.004",
+                    "name": "NTFS File Attributes"
+                }
+            },
+            {
+                "tactic": {
+                    "name": "Collection"
+                },
+                "technique": {
+                    "uid": "T1056",
+                    "name": "Input Capture"
+                },
+                "sub_technique": {
+                    "uid": "T1056.001",
+                    "name": "Keylogging"
+                }
+            },
+            {
+                "tactic": {
+                    "name": "Collection"
+                },
+                "technique": {
+                    "uid": "T1074",
+                    "name": "Data Staged"
+                },
+                "sub_technique": {
+                    "uid": "T1074.001",
+                    "name": "Local Data Staging"
+                }
+            },
+            {
+                "tactic": {
+                    "name": "Discovery"
+                },
+                "technique": {
+                    "uid": "T1082",
+                    "name": "System Information Discovery"
+                }
+            },
+            {
+                "tactic": {
+                    "name": "Persistence"
+                },
+                "technique": {
+                    "uid": "T1547",
+                    "name": "Boot or Logon Autostart Execution"
+                },
+                "sub_technique": {
+                    "uid": "T1547.004",
+                    "name": "Winlogon Helper DLL"
+                }
+            },
+            {
+                "tactic": {
+                    "name": "Discovery"
+                },
+                "technique": {
+                    "uid": "T1057",
+                    "name": "Process Discovery"
+                }
+            },
+            {
+                "tactic": {
+                    "name": "Defense Evasion"
+                },
+                "technique": {
+                    "uid": "T1070",
+                    "name": "Indicator Removal"
+                },
+                "sub_technique": {
+                    "uid": "T1070.004",
+                    "name": "File Deletion"
+                }
+            },
+            {
+                "tactic": {
+                    "name": "Defense Evasion"
+                },
+                "technique": {
+                    "uid": "T1112",
+                    "name": "Modify Registry"
+                }
+            },
+            {
+                "tactic": {
+                    "name": "Execution"
+                },
+                "technique": {
+                    "uid": "T1129",
+                    "name": "Shared Modules"
+                }
+            },
+            {
+                "tactic": {
+                    "name": "Defense Evasion"
+                },
+                "technique": {
+                    "uid": "T1134",
+                    "name": "Access Token Manipulation"
+                }
+            }
+        ]
+    },
+    "time": 1756723394110,
+    "impact_score": {
+        "name": 43
+    },
+    "severity": "MEDIUM",
+    "severity_id": 3,
+    "status_detail": "OPEN",
+    "status_id": 2,
+    "count": 127,
+    "observables": [
+        {
+            "type_id": 20,
+            "name": "device.name",
+            "type": "Endpoint",
+            "value": "LAP-0290"
+        },
+        {
+            "type_id": 20,
+            "name": "device.computerType",
+            "type": "Endpoint",
+            "value": "LAPTOP"
+        },
+        {
+            "type_id": 2,
+            "name": "device.ip",
+            "type": "IP Address",
+            "value": "192.168.1.8"
+        },
+        {
+            "type_id": 1,
+            "name": "device.domain",
+            "type": "Hostname",
+            "value": "WORKGROUP"
+        },
+        {
+            "type_id": 3,
+            "name": "device.macAddress",
+            "type": "MAC Address",
+            "value": "B4-BD-2B-F9-DB-54,6C-24-08-B4-CA-35,00-15-5D-9D-E2-20,0A-00-27-00-00-1B,0A-00-27-00-00-21,0A-00-27-00-00-14,0A-00-27-00-00-13,00-FF-BF-D7-DB-A4,,8C-F8-C5-C3-5C-67,8C-F8-C5-C3-5C-68,8E-F8-C5-C3-5C-67"
+        }
+    ]
+}

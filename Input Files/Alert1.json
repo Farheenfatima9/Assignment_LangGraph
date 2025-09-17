@@ -1,0 +1,246 @@
+{
+	"hash" : "f211694aaf443b12b2eca9f5e7f25407",
+    "category_uid": 2,
+    "category_name": "Findings",
+    "class_uid": 2004,
+    "class_name": "Detection Finding",
+    "metadata": {
+        "product": {
+            "name": "vipre"
+        },
+        "version": "1.0.0"
+    },
+    "activity_id": 1,
+    "activity_name": "Create",
+    "type_uid": 200401,
+    "unmapped": {
+        "links": [
+            {
+                "rel": [
+                    "backtrack-details"
+                ]
+            }
+        ],
+        "incidentId": "INC-652",
+        "device": {
+            "agent_list": [
+                {
+                    "uid_alt": "2752c38b-d7a6-4971-9289-075f21c67137",
+                    "policies": [
+                        {
+                            "uid": "d3113439-8284-4de4-8da9-f6a7ef0080ba",
+                            "name": "MSS - PT"
+                        }
+                    ]
+                }
+            ],
+            "softwareVersion": "13.2.8665",
+            "loggedInUser": "LAP-0309\\ebryx"
+        },
+        "blocked": true,
+        "attackTypes": [
+            "Malware"
+        ],
+        "alertCount": 13,
+        "notesCount": 0,
+        "triggerNode": {
+            "depthLevel": 0,
+            "eventTime": 1756797180685,
+            "phase": 1,
+            "reason": "FILE_READ",
+            "type": "FILE",
+            "score": 100,
+            "alertCount": 1,
+            "eventCount": 1,
+            "actionTaken": "UNDEFINED",
+            "data": {
+                "detectionName": "Generic.Trojan.Cosas.A.6999C2EB",
+                "detectionMark": "MALWARE",
+                "malwareFamily": "Agent",
+                "actionsTaken": "UNDEFINED",
+                "accessType": "FILE_READ",
+                "processAccessPrivileges": "elevated"
+            }
+        }
+    },
+    "evidences": [
+        {
+            "http_request": {
+                "http_method": "GET",
+                "uid": "68b181f1-b0da-4cfb-ac44-99caa0e19f4c",
+                "url": {
+                    "hostname": "mssp"
+                }
+            },
+            "uid": "frAQBc8Wsa1xVPfvJcrgRYwTiizs2trQF69AzBlax3CF3EDNhm3soLBPh71Yexui81f463fbde9d815bd92f91597191cee6d1eebc7dc93305d4eaoEiIgxIX4a2dRE",
+            "device": {
+                "hostname": "Jubair",
+                "type": "LAPTOP",
+                "type_id": 1,
+                "ip": "192.168.18.36",
+                "domain": "WORKGROUP",
+                "mac": "E8-80-88-D7-F8-B2,00-FF-F8-C9-4E-B4,00-15-5D-7B-74-83,0A-00-27-00-00-1E,0A-00-27-00-00-05,10-F6-0A-EC-5E-EA,00-FF-B2-BE-44-66,,10-F6-0A-EC-5E-E6,10-F6-0A-EC-5E-E7,12-F6-0A-EC-5E-E6",
+                "os": {
+                    "name": "Windows 11",
+                    "type_id": 100
+                }
+            },
+            "verdict": "NONE",
+            "process": {
+                "uid": "2439412411",
+                "name": "csrf.html",
+                "pid": 0,
+                "path": "c:\\programdata\\microsoft\\windows defender\\platform\\4.18.25070.5-0\\msmpeng.exe",
+                "integrity": "system"
+            }
+        }
+    ],
+    "finding_info": {
+        "src_url": "https://mssp.avshield.eu/incidents/details/frAQBc8Wsa1xVPfvJcrgRYwTiizs2trQF69AzBlax3CF3EDNhm3soLBPh71Yexui81f463fbde9d815bd92f91597191cee6d1eebc7dc93305d4eaoEiIgxIX4a2dRE/1756797215519",
+        "uid": "frAQBc8Wsa1xVPfvJcrgRYwTiizs2trQF69AzBlax3CF3EDNhm3soLBPh71Yexui81f463fbde9d815bd92f91597191cee6d1eebc7dc93305d4eaoEiIgxIX4a2dRE",
+        "attacks": [
+            {
+                "tactic": {
+                    "name": "Defense Evasion"
+                },
+                "technique": {
+                    "uid": "T1564",
+                    "name": "Hide Artifacts"
+                },
+                "sub_technique": {
+                    "uid": "T1564.004",
+                    "name": "NTFS File Attributes"
+                }
+            },
+            {
+                "tactic": {
+                    "name": "Execution"
+                },
+                "technique": {
+                    "uid": "T1204",
+                    "name": "User Execution"
+                },
+                "sub_technique": {
+                    "uid": "T1204.002",
+                    "name": "Malicious File"
+                }
+            },
+            {
+                "tactic": {
+                    "name": "Execution"
+                },
+                "technique": {
+                    "uid": "T1059",
+                    "name": "Command and Scripting Interpreter"
+                }
+            },
+            {
+                "tactic": {
+                    "name": "Discovery"
+                },
+                "technique": {
+                    "uid": "T1083",
+                    "name": "File and Directory Discovery"
+                }
+            },
+            {
+                "tactic": {
+                    "name": "Execution"
+                },
+                "technique": {
+                    "uid": "T1106",
+                    "name": "Native API"
+                }
+            },
+            {
+                "tactic": {
+                    "name": "Defense Evasion"
+                },
+                "technique": {
+                    "uid": "T1134",
+                    "name": "Access Token Manipulation"
+                }
+            },
+            {
+                "tactic": {
+                    "name": "Defense Evasion"
+                },
+                "technique": {
+                    "uid": "T1497",
+                    "name": "Virtualization/Sandbox Evasion"
+                },
+                "sub_technique": {
+                    "uid": "T1497.001",
+                    "name": "System Checks"
+                }
+            },
+            {
+                "tactic": {
+                    "name": "Defense Evasion"
+                },
+                "technique": {
+                    "uid": "T1497",
+                    "name": "Virtualization/Sandbox Evasion"
+                },
+                "sub_technique": {
+                    "uid": "T1497.002",
+                    "name": "User Activity Based Checks"
+                }
+            },
+            {
+                "tactic": {
+                    "name": "Execution"
+                },
+                "technique": {
+                    "uid": "T1569",
+                    "name": "System Services"
+                },
+                "sub_technique": {
+                    "uid": "T1569.002",
+                    "name": "Service Execution"
+                }
+            }
+        ]
+    },
+    "time": 1756797215519,
+    "impact_score": {
+        "name": 41
+    },
+    "severity": "MEDIUM",
+    "severity_id": 3,
+    "status_detail": "OPEN",
+    "status_id": 2,
+    "count": 21,
+    "observables": [
+        {
+            "type_id": 20,
+            "name": "device.name",
+            "type": "Endpoint",
+            "value": "LAP-0309"
+        },
+        {
+            "type_id": 20,
+            "name": "device.computerType",
+            "type": "Endpoint",
+            "value": "LAPTOP"
+        },
+        {
+            "type_id": 2,
+            "name": "device.ip",
+            "type": "IP Address",
+            "value": "192.168.18.36"
+        },
+        {
+            "type_id": 1,
+            "name": "device.domain",
+            "type": "Hostname",
+            "value": "WORKGROUP"
+        },
+        {
+            "type_id": 3,
+            "name": "device.macAddress",
+            "type": "MAC Address",
+            "value": "E8-80-88-D7-F8-B2,00-FF-F8-C9-4E-B4,00-15-5D-7B-74-83,0A-00-27-00-00-1E,0A-00-27-00-00-05,10-F6-0A-EC-5E-EA,00-FF-B2-BE-44-66,,10-F6-0A-EC-5E-E6,10-F6-0A-EC-5E-E7,12-F6-0A-EC-5E-E6"
+        }
+    ]
+}

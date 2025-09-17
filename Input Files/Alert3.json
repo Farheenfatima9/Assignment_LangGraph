@@ -1,0 +1,207 @@
+{
+    "category_uid": 2,
+    "category_name": "Findings",
+    "class_uid": 2004,
+    "class_name": "Detection Finding",
+    "metadata": {
+        "product": {
+            "name": "vipre"
+        },
+        "version": "1.0.0"
+    },
+    "activity_id": 1,
+    "activity_name": "Create",
+    "type_uid": 200401,
+    "unmapped": {
+        "links": [
+            {
+                "rel": [
+                    "backtrack-details"
+                ]
+            }
+        ],
+        "incidentId": "INC-650",
+        "device": {
+            "agent_list": [
+                {
+                    "uid_alt": "4fc1efeb-d78e-4baa-b278-a2d15f7714a2",
+                    "policies": [
+                        {
+                            "uid": "d3113439-8284-4de4-8da9-f6a7ef0080ba",
+                            "name": "MSS - PT"
+                        }
+                    ]
+                }
+            ],
+            "softwareVersion": "13.2.8665",
+            "loggedInUser": "LAP-0290\\Ebryx", 
+            "hash": "ffcad40333d105366b2037ab97e22c44"
+        },
+        "blocked": true,
+        "attackTypes": [
+            "Malware",
+            "Potentially unwanted application"
+        ],
+        "alertCount": 15,
+        "notesCount": 0,
+        "triggerNode": {
+            "depthLevel": 0,
+            "eventTime": 1756723664957,
+            "phase": 1,
+            "reason": "FILE_READ",
+            "type": "FILE",
+            "score": 100,
+            "alertCount": 1,
+            "eventCount": 1,
+            "actionTaken": "UNDEFINED",
+            "data": {
+                "detectionName": "Application.ProcessHacker.1",
+                "detectionMark": "MALWARE",
+                "malwareFamily": "Agent",
+                "actionsTaken": "UNDEFINED",
+                "accessType": "FILE_READ",
+                "processAccessPrivileges": "restricted"
+            }
+        }
+    },
+    "evidences": [
+        {
+            "http_request": {
+                "http_method": "GET",
+                "uid": "68b181f1-b0da-4cfb-ac44-99caa0e19f4c",
+                "url": {
+                    "hostname": "mssp"
+                }
+            },
+            "uid": "frAQBc8Wsa1xVPfvJcrgRYwTiizs2trQF69AzBlax3CF3EDNhm3soLBPh71Yexuidbb97b033aaf9908d92f91597191cee6d1eebc7dc93305d4eaoEiIgxIX4a2dRE",
+            "device": {
+                "hostname": "Syed Umer Qadri",
+                "type": "LAPTOP",
+                "type_id": 1,
+                "ip": "87.120.191.13",
+                "domain": "WORKGROUP",
+                "mac": "B4-BD-2B-F9-DB-54,6C-24-08-B4-CA-35,00-15-5D-9D-E2-20,0A-00-27-00-00-1B,0A-00-27-00-00-21,0A-00-27-00-00-14,0A-00-27-00-00-13,00-FF-BF-D7-DB-A4,,8C-F8-C5-C3-5C-67,8C-F8-C5-C3-5C-68,8E-F8-C5-C3-5C-67",
+                "os": {
+                    "name": "Windows 11",
+                    "type_id": 100
+                }
+            },
+            "verdict": "NONE",
+            "process": {
+                "uid": "3253610895",
+                "name": "windowexplorer.dll",
+                "pid": 0,
+                "path": "c:\\program files\\process hacker 2\\processhacker.exe",
+                "integrity": "medium"
+            }
+        }
+    ],
+    "finding_info": {
+        "src_url": "https://mssp.avshield.eu/incidents/details/frAQBc8Wsa1xVPfvJcrgRYwTiizs2trQF69AzBlax3CF3EDNhm3soLBPh71Yexuidbb97b033aaf9908d92f91597191cee6d1eebc7dc93305d4eaoEiIgxIX4a2dRE/1756723711169",
+        "uid": "frAQBc8Wsa1xVPfvJcrgRYwTiizs2trQF69AzBlax3CF3EDNhm3soLBPh71Yexuidbb97b033aaf9908d92f91597191cee6d1eebc7dc93305d4eaoEiIgxIX4a2dRE",
+        "attacks": [
+            {
+                "tactic": {
+                    "name": "Defense Evasion"
+                },
+                "technique": {
+                    "uid": "T1553",
+                    "name": "Subvert Trust Controls"
+                },
+                "sub_technique": {
+                    "uid": "T1553.002",
+                    "name": "Code Signing"
+                }
+            },
+            {
+                "tactic": {
+                    "name": "Initial Access"
+                },
+                "technique": {
+                    "uid": "T1195",
+                    "name": "Supply Chain Compromise"
+                },
+                "sub_technique": {
+                    "uid": "T1195.002",
+                    "name": "Compromise Software Supply Chain"
+                }
+            },
+            {
+                "tactic": {
+                    "name": "Execution"
+                },
+                "technique": {
+                    "uid": "T1204",
+                    "name": "User Execution"
+                },
+                "sub_technique": {
+                    "uid": "T1204.002",
+                    "name": "Malicious File"
+                }
+            },
+            {
+                "tactic": {
+                    "name": "Initial Access"
+                },
+                "technique": {
+                    "uid": "T1566",
+                    "name": "Phishing"
+                },
+                "sub_technique": {
+                    "uid": "T1566.002",
+                    "name": "Spearphishing Link"
+                }
+            },
+            {
+                "tactic": {
+                    "name": "Execution"
+                },
+                "technique": {
+                    "uid": "T1203",
+                    "name": "Exploitation for Client Execution"
+                }
+            }
+        ]
+    },
+    "time": 1756723711169,
+    "impact_score": {
+        "name": 27
+    },
+    "severity": "LOW",
+    "severity_id": 2,
+    "status_detail": "OPEN",
+    "status_id": 2,
+    "count": 13,
+    "observables": [
+        {
+            "type_id": 20,
+            "name": "device.name",
+            "type": "Endpoint",
+            "value": "LAP-0290"
+        },
+        {
+            "type_id": 20,
+            "name": "device.computerType",
+            "type": "Endpoint",
+            "value": "LAPTOP"
+        },
+        {
+            "type_id": 2,
+            "name": "device.ip",
+            "type": "IP Address",
+            "value": "192.168.1.8"
+        },
+        {
+            "type_id": 1,
+            "name": "device.domain",
+            "type": "Hostname",
+            "value": "WORKGROUP"
+        },
+        {
+            "type_id": 3,
+            "name": "device.macAddress",
+            "type": "MAC Address",
+            "value": "B4-BD-2B-F9-DB-54,6C-24-08-B4-CA-35,00-15-5D-9D-E2-20,0A-00-27-00-00-1B,0A-00-27-00-00-21,0A-00-27-00-00-14,0A-00-27-00-00-13,00-FF-BF-D7-DB-A4,,8C-F8-C5-C3-5C-67,8C-F8-C5-C3-5C-68,8E-F8-C5-C3-5C-67"
+        }
+    ]
+}

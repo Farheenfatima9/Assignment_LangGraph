@@ -1,0 +1,248 @@
+{
+    "category_uid": 2,
+    "category_name": "Findings",
+     
+    "class_uid": 2004,
+    "class_name": "Detection Finding",
+    "metadata": {
+        "product": {
+            "name": "vipre"
+        },
+        "version": "1.0.0"
+    },
+    "activity_id": 1,
+    "activity_name": "Create",
+    "type_uid": 200401,
+    "unmapped": {
+        "links": [
+            {
+                "rel": [
+                    "backtrack-details"
+                ]
+            }
+        ],
+        "incidentId": "INC-639",
+        "device": {
+            "agent_list": [
+                {
+                    "uid_alt": "4fc1efeb-d78e-4baa-b278-a2d15f7714a2",
+                    "policies": [
+                        {
+                            "uid": "d3113439-8284-4de4-8da9-f6a7ef0080ba",
+                            "name": "MSS - PT"
+                        }
+                    ]
+                }
+            ],
+            "softwareVersion": "13.2.8665",
+            "loggedInUser": "LAP-0290\\Ebryx"
+        },
+        "blocked": true,
+        "attackTypes": [
+            "Malware",
+            "Exploit",
+            "Other"
+        ],
+        "alertCount": 15,
+        "notesCount": 0,
+        "triggerNode": {
+            "depthLevel": 0,
+            "eventTime": 1753764958315,
+            "phase": 1,
+            "reason": "FILE_READ",
+            "type": "FILE",
+            "score": 100,
+            "alertCount": 1,
+            "eventCount": 1,
+            "actionTaken": "UNDEFINED",
+            "data": {
+                "detectionName": "Trojan.GenericKD.71257710",
+                "detectionMark": "MALWARE",
+                "malwareFamily": "Agent",
+                "actionsTaken": "UNDEFINED",
+                "accessType": "FILE_READ",
+                "processAccessPrivileges": "restricted"
+            }
+        }
+    },
+    "evidences": [
+        {
+            "http_request": {
+                "http_method": "GET",
+                "uid": "68b181f1-b0da-4cfb-ac44-99caa0e19f4c",
+                "url": {
+                    "hostname": "mssp"
+                }
+            },
+            "uid": "frAQBc8Wsa1xVPfvJcrgRYwTiizs2trQF69AzBlax3CF3EDNhm3soLBPh71Yexui665b7af3b3d61aded92f91597191cee6d1eebc7dc93305d4eaoEiIgxIX4a2dRE",
+            "device": {
+                "hostname": "Syed Umer Qadri",
+                "type": "LAPTOP",
+                "type_id": 1,
+                "ip": "141.98.11.68",
+                "domain": "WORKGROUP",
+                "mac": "B4-BD-2B-F9-DB-54,6C-24-08-B4-CA-35,00-15-5D-9D-E2-20,00-15-5D-74-76-D6,0A-00-27-00-00-1B,0A-00-27-00-00-20,0A-00-27-00-00-13,0A-00-27-00-00-12,00-FF-BF-D7-DB-A4,,8C-F8-C5-C3-5C-67,8C-F8-C5-C3-5C-68,8E-F8-C5-C3-5C-67",
+                "os": {
+                    "name": "Windows 11",
+                    "type_id": 100
+                }
+            },
+            "verdict": "NONE",
+            "process": {
+                "uid": "42203793",
+                "name": "script.js",
+                "pid": 0,
+                "path": "c:\\program files\\java\\jdk-19\\bin\\java.exe",
+                "integrity": "medium"
+            }
+        }
+    ],
+    "finding_info": {
+        "src_url": "https://mssp.avshield.eu/incidents/details/frAQBc8Wsa1xVPfvJcrgRYwTiizs2trQF69AzBlax3CF3EDNhm3soLBPh71Yexui665b7af3b3d61aded92f91597191cee6d1eebc7dc93305d4eaoEiIgxIX4a2dRE/1753764978113",
+        "uid": "frAQBc8Wsa1xVPfvJcrgRYwTiizs2trQF69AzBlax3CF3EDNhm3soLBPh71Yexui665b7af3b3d61aded92f91597191cee6d1eebc7dc93305d4eaoEiIgxIX4a2dRE",
+        "attacks": [
+            {
+                "tactic": {
+                    "name": "Defense Evasion"
+                },
+                "technique": {
+                    "uid": "T1134",
+                    "name": "Access Token Manipulation"
+                }
+            },
+            {
+                "tactic": {
+                    "name": "Execution"
+                },
+                "technique": {
+                    "uid": "T1204",
+                    "name": "User Execution"
+                },
+                "sub_technique": {
+                    "uid": "T1204.002",
+                    "name": "Malicious File"
+                }
+            },
+            {
+                "tactic": {
+                    "name": "Defense Evasion"
+                },
+                "technique": {
+                    "uid": "T1055",
+                    "name": "Process Injection"
+                }
+            },
+            {
+                "tactic": {
+                    "name": "Execution"
+                },
+                "technique": {
+                    "uid": "T1059",
+                    "name": "Command and Scripting Interpreter"
+                },
+                "sub_technique": {
+                    "uid": "T1059.003",
+                    "name": "Windows Command Shell"
+                }
+            },
+            {
+                "tactic": {
+                    "name": "Execution"
+                },
+                "technique": {
+                    "uid": "T1203",
+                    "name": "Exploitation for Client Execution"
+                }
+            },
+            {
+                "tactic": {
+                    "name": "Privilege Escalation"
+                },
+                "technique": {
+                    "uid": "T1548",
+                    "name": "Abuse Elevation Control Mechanism"
+                },
+                "sub_technique": {
+                    "uid": "T1548.002",
+                    "name": "Bypass User Account Control"
+                }
+            },
+            {
+                "tactic": {
+                    "name": "Defense Evasion"
+                },
+                "technique": {
+                    "uid": "T1553",
+                    "name": "Subvert Trust Controls"
+                },
+                "sub_technique": {
+                    "uid": "T1553.002",
+                    "name": "Code Signing"
+                }
+            },
+            {
+                "tactic": {
+                    "name": "Collection"
+                },
+                "technique": {
+                    "uid": "T1560",
+                    "name": "Archive Collected Data"
+                },
+                "sub_technique": {
+                    "uid": "T1560.002",
+                    "name": "Archive via Library"
+                }
+            },
+            {
+                "tactic": {
+                    "name": "Defense Evasion"
+                },
+                "technique": {
+                    "uid": "T1620",
+                    "name": "Reflective Code Loading"
+                }
+            }
+        ]
+    },
+    "time": 1753764978113,
+    "impact_score": {
+        "name": 56
+    },
+    "severity": "MEDIUM",
+    "severity_id": 3,
+    "status_detail": "OPEN",
+    "status_id": 2,
+    "count": 29,
+    "observables": [
+        {
+            "type_id": 20,
+            "name": "device.name",
+            "type": "Endpoint",
+            "value": "LAP-0290"
+        },
+        {
+            "type_id": 20,
+            "name": "device.computerType",
+            "type": "Endpoint",
+            "value": "LAPTOP"
+        },
+        {
+            "type_id": 2,
+            "name": "device.ip",
+            "type": "IP Address",
+            "value": "192.168.1.2"
+        },
+        {
+            "type_id": 1,
+            "name": "device.domain",
+            "type": "Hostname",
+            "value": "WORKGROUP"
+        },
+        {
+            "type_id": 3,
+            "name": "device.macAddress",
+            "type": "MAC Address",
+            "value": "B4-BD-2B-F9-DB-54,6C-24-08-B4-CA-35,00-15-5D-9D-E2-20,00-15-5D-74-76-D6,0A-00-27-00-00-1B,0A-00-27-00-00-20,0A-00-27-00-00-13,0A-00-27-00-00-12,00-FF-BF-D7-DB-A4,,8C-F8-C5-C3-5C-67,8C-F8-C5-C3-5C-68,8E-F8-C5-C3-5C-67"
+        }
+    ]
+}
