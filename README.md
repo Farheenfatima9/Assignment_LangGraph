@@ -7,11 +7,11 @@ It takes a JSON file as input, extracts IP addresses and hash values, and checks
 The flow is modeled as a graph of states for better modularity and debugging.
 
 📌 **Features**
-  ✅ Validates JSON file input.
-  ✅ Extracts ip and hash values automatically from nested JSON.
-  ✅ Queries VirusTotal API for IP and File Hash reputation.
-  ✅ Handles errors (invalid API key, rate limits, wrong input).
-  ✅ Graph visualization of processing pipeline.
+  - ✅ Validates JSON file input.
+  - ✅ Extracts ip and hash values automatically from nested JSON.
+  - ✅ Queries VirusTotal API for IP and File Hash reputation.
+  - ✅ Handles errors (invalid API key, rate limits, wrong input).
+  - ✅ Graph visualization of processing pipeline.
 
 
 
